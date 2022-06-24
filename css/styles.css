@@ -1,3 +1,4 @@
+/* main */
 :root {
     --primary-background-color: #ffffff;
     --secondary-background-color: #f5f4fa;
@@ -30,6 +31,44 @@ body{
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+  .container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid rgb(106, 145, 253);
+
+  }
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+}
+*/img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+html {
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+  /* header */
+  .nav-container{
+    display: flex;
+    align-items: center;
+  }
+  .header-nav{
+    display: flex;
+    margin: 0;
+  }
 .logo-link{
     font-family: 'Raleway';
     font-style: normal;
@@ -39,15 +78,22 @@ body{
     letter-spacing: 0.03em;
     color: var(--accent);
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 .logo-studio{
     color: var(--logo-color);
 }
 .list-nav{
-  text-decoration: none;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  margin-left: 93px;
+  padding: 0;
+  align-items: center;
 }
 .item-nav{
-  list-style: none;
+  margin-left: 50px;
 }
 .item-nav .current {
   color: var(--accent);
@@ -63,8 +109,15 @@ body{
 .link-header:focus {
   color: var(--accent);
 }
-.item-contact{
+.list-contact{
   list-style: none;
+	padding-left: 0;
+	margin: 0;
+  display: flex;
+  margin-left: auto;
+ }
+.item-contact{
+  margin-left: 50px;
 }
 .link-contact{
   color:  var(--primary-text-color);
@@ -77,33 +130,56 @@ body{
 .link-contact:focus {
   color: var(--accent);
 }
+/* studia */
 .main-page {
     background: var(--third-background-color);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+
 }
 .main-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-background-color);
+    padding-top: 200px;
+    padding-bottom: 30px; 
+    text-align: center;
+    width: 696px;
+    margin: auto;
 }
 .support {
     background-color: var(--button-hover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    padding: 10px 32px ;
     font-size: 16px;
     line-height: 1.9;
     color: #FFFFFF;
     cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 32px ;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: 0;
+    margin-top: 30px;
+    min-width: 13px;
+    margin-bottom: 200px;
 }
 .facts-list {
-  text-decoration: none;
-}
-.facts-item{
   list-style: none;
+	padding-left: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.facts-item{
+
 }
 .facts-title {
     font-size: 14px;
@@ -150,6 +226,7 @@ body{
     text-align: center;
     color: var(--primary-text-color);
   }
+  /* footer */
   footer{
     background: var(--third-background-color);
   }
@@ -160,7 +237,9 @@ body{
     font-style: normal;
   }
   .footer-list{
-    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
   }
   .footer-item{
     list-style: none;
@@ -177,8 +256,11 @@ body{
 .addreses{
   color: var(--invert-text-color);
 }
+/* portfolio */
 .button-list{
-  text-decoration: none;
+  list-style: none;
+	padding-left: 0;
+	margin: 0;
 }
 .button-item{
   list-style: none;
