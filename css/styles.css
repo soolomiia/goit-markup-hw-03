@@ -200,6 +200,7 @@ html {
 
 }
 .list-presentation{
+  display: flex;
   text-decoration: none;
   margin-left: -30px;
   margin-top: -30px;
@@ -221,6 +222,7 @@ html {
 }
 .list-team{
   text-decoration: none;
+  display: flex;
   margin-top: -30px;
   margin-left: -30px;
 }
@@ -304,6 +306,7 @@ html {
   list-style: none;
 	padding-left: 0;
 	margin: 0;
+  margin-bottom: 50px;
 }
 .button-item{
   list-style: none;
@@ -334,22 +337,25 @@ html {
 .service{
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
   margin-top: -30px;
   margin-left: -30px;
 }
-.service-description{
-  text-align: left;
-  padding: 20px 24px;
-  margin: 4px;
-  border-bottom: var(--accent);
-  border-width: 1px;
-}
+
 .service-card {
   display: inline-block;
   flex-basis: calc((100% - 60px) / 3);
+  flex-wrap: wrap;
   margin-top: 30px;
   margin-left: 30px;
   
+  }
+  .service-description{
+    text-align: left;
+    padding: 20px 24px;
+    margin: 4px;
+    border-bottom: var(--accent);
+    border-width: 1px;
   }
   .service-title {
     font-size: 18px;
