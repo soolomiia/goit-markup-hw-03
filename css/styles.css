@@ -203,14 +203,13 @@ html {
   text-decoration: none;
   margin-left: -30px;
   margin-top: -30px;
-
 }
 .item-presentation{
   list-style: none;
   display: inline-block;
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis:(100% / 3 - 30px);
+  flex-basis: calc((100% - 60px) / 3);
   padding-bottom: 94px;
 }
 .team{
@@ -243,7 +242,7 @@ html {
     margin-bottom: 94px;
     margin-top: 30px;
     margin-left: 30px;
-    flex-basis: calc(100%/4 - 30px);
+    flex-basis: calc((100% - 120px) / 4);
 }
 .team-name {
     font-weight: 500;
@@ -346,8 +345,8 @@ html {
   border-width: 1px;
 }
 .service-card {
-  display: block;
-  flex-basis:(100% / 3 - 30px);
+  display: inline-block;
+  flex-basis: calc((100% - 60px) / 3);
   margin-top: 30px;
   margin-left: 30px;
   
