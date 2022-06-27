@@ -38,10 +38,6 @@ body{
     padding-left: 15px;
     padding-right: 15px;
   }
-  *section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;
 }
@@ -63,6 +59,8 @@ html {
     display: flex;
     align-items: center;
     border-bottom: var(--button-hover);
+    justify-content: space-between;
+    Border-bottom 1px solid #ECECEC;
   }
   .header-nav{
     display: flex;
@@ -88,8 +86,9 @@ html {
   display: flex;
   margin: 0;
   margin-left: 93px;
-  padding: 0;
   align-items: center;
+  list-style: none;
+	padding-left: 0;
 }
 .item-nav{
   margin-left: 50px;
@@ -103,6 +102,9 @@ html {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+	color: inherit;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .link-header:hover, 
 .link-header:focus {
@@ -124,6 +126,8 @@ html {
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .link-contact:hover,
 .link-contact:focus {
@@ -132,9 +136,10 @@ html {
 /* studia */
 .main-page {
     background: var(--third-background-color);
-    width: 100%;
     text-align: center;
-    align-items: center;
+    padding: 200px 0;
+    margin: 0;
+
 
 }
 .main-title {
@@ -144,11 +149,11 @@ html {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-background-color);
-    padding-top: 200px;
-    padding-bottom: 30px; 
-    text-align: center;
+    margin-bottom: 30px; 
+    margin-left: auto;
+    margin-right: auto;
     width: 696px;
-    margin: auto;
+ 
 }
 .support {
     background-color: var(--button-hover);
@@ -166,14 +171,22 @@ html {
     border: 0;
     margin-top: 30px;
     min-width: 13px;
-    margin-bottom: 200px;
+
+}
+.studio-facts{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .facts-list {
   list-style: none;
   display: flex;
   margin: 0;
+  padding-left: 0;
   align-items: center;
-  padding-top: 94px;
+  justify-content: space-between;
+}
+.facts-item{
+  width: 270px;
 }
 
 .facts-title {
@@ -186,9 +199,11 @@ html {
 .facts-text{
     line-height: 1.71;
     color: var(--primary-text-color);
+    margin: 0;
 }
 .presentation{
   padding-top: 94px;
+  padding-bottom: 94px;
   text-align: center;
   align-items: center;
 }
@@ -202,8 +217,8 @@ html {
 .list-presentation{
   display: flex;
   text-decoration: none;
-  margin-left: -30px;
-  margin-top: -30px;
+  padding-left: 0%;
+  margin: 0;
 }
 .item-presentation{
   list-style: none;
@@ -211,10 +226,10 @@ html {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 60px) / 3);
-  padding-bottom: 94px;
 }
 .team{
   padding-top: 94px;
+  padding-bottom: 94px;
   text-align: center;
   align-items: center;
   background-color: var(--secondary-background-color);
@@ -223,16 +238,16 @@ html {
 .list-team{
   text-decoration: none;
   display: flex;
+  padding-left: 0%;
   margin-top: -30px;
   margin-left: -30px;
+  margin-bottom: 0;
 }
 .team-text{
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.section-title{
-  margin-top: 94px;
-}
+
 .team-card{
     list-style: none;
     background: var(--primary-background-color);
@@ -298,6 +313,7 @@ html {
 /* portfolio */
 .portfolio-section{
   padding-top: 94px;
+  padding-bottom: 94px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -305,8 +321,8 @@ html {
 .button-list{
   list-style: none;
 	padding-left: 0;
-	margin: 0;
-  margin-bottom: 50px;
+  margin: 0;
+
 }
 .button-item{
   list-style: none;
@@ -337,16 +353,15 @@ html {
 .service{
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin-top: -30px;
-  margin-left: -30px;
+  padding-left: 0;
+  margin-top: 50px;
+  margin-left: 0;
+  justify-content: space-between;
 }
 
 .service-card {
   list-style: none;
   flex-basis: calc((100% - 60px) / 3);
-
-  
   }
   .service-description{
     text-align: left;
