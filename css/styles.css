@@ -93,10 +93,16 @@ html {
   list-style: none;
 	padding-left: 0;
 }
+.item-nav-first{
+  margin: 0;
+}
 .item-nav{
   margin-left: 50px;
 }
 .item-nav .current {
+  color: var(--accent);
+}
+.item-nav-first .current {
   color: var(--accent);
 }
 .link-header {
@@ -122,6 +128,9 @@ html {
  }
 .item-contact{
  margin-left: 50px;
+}
+.item-contact-first{
+  margin: 0;
 }
 .link-contact{
   color:  var(--primary-text-color);
@@ -219,7 +228,6 @@ html {
   padding-left: 0%;
   margin-top: -30px;
   margin-left: -30px;
-  margin: 0;
 }
 .item-presentation{
   list-style: none;
@@ -296,11 +304,11 @@ html {
   }
   .footer-item{
     list-style: none;
+    margin-bottom: 9px;
   }
   .footer-link{
     text-decoration: none;
     line-height: 1.7;
-    margin-bottom: 9px;
     color:   rgba(255, 255, 255, 0.6);
   }
 
@@ -320,7 +328,7 @@ html {
 .button-item{
   list-style: none;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 8px;
   
 }
 .button-portfolio{
