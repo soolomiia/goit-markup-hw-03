@@ -228,6 +228,7 @@ html {
   padding-left: 0%;
   margin-top: -30px;
   margin-left: -30px;
+  margin-bottom: 0;
 }
 .item-presentation{
   list-style: none;
@@ -306,6 +307,9 @@ html {
     list-style: none;
     margin-bottom: 9px;
   }
+  .footer-item-contact{
+    margin-bottom: 0;
+  }
   .footer-link{
     text-decoration: none;
     line-height: 1.7;
@@ -323,13 +327,14 @@ html {
   list-style: none;
 	padding-left: 0;
   margin: 0;
-
 }
 .button-item{
   list-style: none;
   display: inline-block;
   margin-right: 8px;
-  
+}
+.button-item-last{
+  margin-right: 0;
 }
 .button-portfolio{
     background: #F5F4FA;
